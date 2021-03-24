@@ -1,0 +1,480 @@
+* {
+  box-sizing: border-box;
+  margin: 0;
+}
+
+html {
+  font-size: 62.5%;
+  font-family: "Nunito Sans", sans-serif;
+}
+
+p {
+  font-size: 1.4rem;
+}
+
+.container {
+  display: grid;
+  grid-template-columns: repeat(1, 1fr);
+  grid-auto-rows: minmax(1rem, auto);
+  gap: 1rem;
+  grid-template-areas:
+    "one"
+    "two"
+    "three"
+    "four";
+}
+
+#one {
+  background-color: #002b5c;
+  color: white;
+  font-size: 1.4rem;
+  grid-area: one;
+  padding-bottom: 0.7rem;
+  padding-top: 0.7rem;
+  text-align: center;
+}
+
+#one span {
+  font-weight: normal;
+}
+
+#two {
+  border-bottom: 2px solid #f7f7f7;
+  display: grid;
+  gap: 1rem;
+  grid-area: two;
+  grid-auto-rows: minmax(1rem, auto);
+  grid-template-columns: repeat(3, 1fr);
+  padding-bottom: 1.5rem;
+  padding-top: 2rem;
+  grid-template-areas:
+    "two__one two__two two__three"
+    " two__four two__four two__five";
+}
+
+#two__one {
+  color: #002b5c;
+  grid-area: two__one;
+  margin-left: 8rem;
+  margin-right: 4rem;
+  white-space: nowrap;
+}
+
+#two__one ul {
+  display: flex;
+  list-style-type: none;
+  padding-left: 0;
+}
+
+#two__one ul * {
+  margin-right: 0.7rem;
+}
+
+#findStore {
+  font-size: 1.3rem;
+  color: #002b5c;
+}
+
+#findStore:hover {
+  border-bottom: 1px solid #002b5c;
+}
+
+#contact {
+  font-size: 1.3rem;
+  color: #2e7fa0;
+}
+
+#contact:hover {
+  border-bottom: 1px solid #002b5c;
+}
+
+#two__one span {
+  padding-bottom: 0.8rem;
+  border-bottom: 2px solid #f7f7f7;
+}
+
+#two__one span input {
+  border: 0;
+  width: 15rem;
+}
+
+#two__one span button {
+  background-color: #2e7fa0;
+  border-radius: 3px;
+  border: 0;
+  color: white;
+  font-size: 1.2rem;
+  outline: 0;
+  padding: 0.5rem 1rem;
+}
+
+#two__one p {
+  font-size: 1.4rem;
+}
+
+#two__one p:hover {
+  text-decoration: underline;
+}
+
+a {
+  text-decoration: none;
+}
+
+#two__two {
+  grid-area: two__two;
+  margin-left: 3rem;
+}
+
+#two__two img {
+  width: 22rem;
+  height: 7rem;
+}
+
+#two__three {
+  font-size: 1.5rem;
+  grid-area: two__three;
+  white-space: nowrap;
+}
+
+.welcome:hover {
+  border-bottom: 1px solid #333;
+}
+
+#bag {
+  font-size: 1.5rem;
+  color: #e47a8e;
+}
+
+#suitcase__icon {
+  font-size: 3rem;
+}
+
+#two__three ul {
+  list-style-type: none;
+  display: flex;
+  padding-left: 0;
+}
+
+#two__three span {
+  margin-right: 1rem;
+}
+
+#two__three ul li {
+  margin-right: 1rem;
+}
+
+#two__three ul li[class="welcome"]::after {
+  content: "|";
+}
+
+#two__four {
+  grid-area: two__four;
+  white-space: nowrap;
+  margin-left: 30rem;
+}
+
+#two__four ul {
+  list-style-type: none;
+  color: #002b5c;
+  display: flex;
+  justify-content: space-around;
+}
+
+#two__four ul li {
+  margin-right: 2rem;
+  font-size: 1.2rem;
+}
+
+#two__four ul li:hover {
+  padding: 1rem;
+  background-color: #2e7fa0;
+}
+
+#two__five {
+  grid-area: two__five;
+}
+
+#two__five input {
+  border: 0;
+  border-bottom: 1px solid #333;
+}
+
+#two__five i {
+  font-size: 1.5rem;
+}
+
+#three {
+  grid-area: three;
+  display: grid;
+  gap: 1rem;
+  grid-template-columns: repeat(11, 1fr);
+  grid-auto-rows: minmax(1fr, auto);
+  grid-template-areas:
+    "three_1 . . . . . . . . . . "
+    "three_2 three_3 three_3 three_3 three_3 three_3 three_4 three_4 three_4 three_4 three_4";
+}
+
+#three_1 {
+  grid-area: three_1;
+  margin-left: 2rem;
+}
+
+#three_1 ul {
+  list-style-type: none;
+  display: flex;
+}
+
+#three_1 ul li {
+  margin-right: 1.5rem;
+  font-size: 1.2rem;
+  color: #333;
+}
+
+#three_1 ul li::after {
+  content: " >";
+  white-space: nowrap;
+}
+
+#three_1 ul li:hover {
+  border-bottom: 1px solid #333;
+}
+
+#three_2 {
+  grid-area: three_2;
+  margin-left: 6rem;
+}
+
+#three_2_a img:hover,
+#three_2_b img:hover,
+#three_2_c img:hover {
+  border: 2px solid #333;
+  transform: scale(1.02);
+}
+
+#three_3 {
+  grid-area: three_3;
+}
+
+#three_3 img {
+  width: 50rem;
+  height: 60rem;
+}
+
+#three_3 img:hover {
+  border: 2px solid #333;
+  transform: scale(1.05);
+}
+
+#three_4 {
+  grid-area: three_4;
+  margin-right: 5rem;
+}
+
+#three_4 h1 {
+  font-size: 2.5rem;
+  color: #002b5c;
+}
+
+#three_4 i {
+  font-size: 1.5rem;
+  color: dodgerblue;
+}
+
+#three_4 span {
+  font-size: 1.4rem;
+}
+
+#three_4 h1 {
+  margin-bottom: 1rem;
+}
+
+#three_4 div {
+  margin-top: 2rem;
+  margin-bottom: 2rem;
+}
+
+#free__shipping {
+  color: red;
+}
+
+#new_price {
+  color: red;
+  font-size: 1.5rem;
+  margin-right: 1rem;
+}
+
+#initial_price {
+  color: #333;
+  text-decoration: line-through;
+}
+
+.prices {
+  margin-bottom: 2rem;
+}
+
+.size {
+  font-size: 1.3rem;
+}
+
+.size ul {
+  list-style-type: none;
+  padding-left: 0;
+  display: flex;
+  font-size: 1.2rem;
+}
+
+.size ul li {
+  margin-right: 2rem;
+}
+
+#size {
+  color: black;
+}
+
+.itemSizes ul {
+  list-style-type: none;
+  display: flex;
+  white-space: nowrap;
+  padding-left: 0;
+}
+
+.itemSizes ul li {
+  padding: 1.3rem;
+  margin-right: 1rem;
+  border: 1px solid #333;
+  border: 0;
+  background-color: #efeef3;
+}
+
+#item_3 {
+  background-color: #002b5c;
+  color: white;
+}
+
+.itemSizes ul li:hover {
+  background-color: dodgerblue;
+}
+
+#increment,
+#decrement {
+  border-radius: 0.5rem;
+  color: white;
+  font-weight: 600;
+  font-size: 1.8rem;
+}
+
+#increment {
+  background-color: dodgerblue;
+}
+
+#increment:hover {
+  background-color: white;
+  border: 2px solid dodgerblue;
+  color: dodgerblue;
+}
+
+#decrement:hover {
+  background-color: white;
+  border: 2px solid tomato;
+  color: tomato;
+}
+
+#decrement {
+  background-color: tomato;
+}
+
+.incrementDecrement span ul {
+  margin-top: 5rem;
+}
+
+.paymentMethods i {
+  border: 1px solid dodgerblue;
+  border-radius: 3px;
+  padding: 1rem;
+  margin-right: 1rem;
+}
+
+#count {
+  background-color: white;
+  border: 1px solid #002b5c;
+}
+#numberInStock {
+  color: red;
+  margin-top: 1rem;
+}
+.items {
+  margin-top: 2rem;
+}
+
+#select_color {
+  width: 3.5rem;
+  height: 3.5rem;
+  border-radius: 50%;
+  /* border: 2px solid #002b5c; */
+  border:0;
+}
+
+#add_to_bag {
+  margin-bottom: 1rem;
+  background-color: #002b5c;
+  outline: 0;
+  border: 0;
+  color: white;
+  font-size: 1.7rem;
+  font-weight: 600;
+  cursor: pointer;
+}
+
+#buy_online_1 {
+  font-size: 1.5rem;
+  font-weight: 600;
+  color: #002b5c;
+}
+
+#buy_online_2 {
+  font-size: 1.2rem;
+  cursor: pointer;
+}
+
+#add_to_bag,
+#buy_online {
+  width: 80%;
+  height: 6rem;
+}
+
+.deliveryLogo img {
+  width: 2.5rem;
+  height: 2.5rem;
+}
+
+.delveryAvailability {
+  display: flex;
+}
+
+.delveryAvailability p {
+  margin-right: 2rem;
+}
+
+#four {
+  grid-area: four;
+  border-top: 1px solid #efeef3;
+  margin-bottom: 3rem;
+  margin-left: 7rem;
+  padding-top: 3rem;
+}
+
+#four ul {
+  list-style-type: none;
+  display: flex;
+  padding-left: 0;
+  margin-top: 2rem;
+  font-size: 1.2rem;
+}
+
+#four ul li {
+  margin-right: 3rem;
+}
+
+#four ul li:hover {
+  border-bottom: 1px solid #333;
+}
