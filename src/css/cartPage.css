@@ -8,7 +8,7 @@ html {
   font-family: "Nunito Sans", sans-serif;
 }
 
-.container {
+.containers {
   width: 35vw;
   padding-right: 1rem;
   padding-left: 1rem;
@@ -17,16 +17,16 @@ html {
   grid-template-columns: repeat(2, 1fr);
   grid-auto-rows: minmax(1fr, auto);
   grid-template-areas:
-    "one one"
-    "two three"
-    "four four"
-    "five five"
-    "six six"
+    "one_1 one_1"
+    "two_1 three_1"
+    "four_1 four_1"
+    "five_1 five_1"
+    "six_1 six_1"
     "seven seven";
 }
 
-#one {
-  grid-area: one;
+#one_1 {
+  grid-area: one_1;
   display: flex;
   justify-content: space-around;
   background-color: #002b5c;
@@ -37,23 +37,23 @@ html {
   padding-bottom: 1rem;
 }
 
-#one i {
+#one_1 i {
   color: white;
 }
-#two {
-  grid-area: two;
+#two_1 {
+  grid-area: two_1;
 }
 
-#two img {
+#two_1 img {
   width: 16rem;
   height: 18rem;
 }
 
-#three {
-  grid-area: three;
+#three_1 {
+  grid-area: three_1;
 }
 
-#three h2 {
+#three_1 h2 {
   font-size: 1.6rem;
   color: #002b5c;
 }
@@ -97,11 +97,11 @@ html {
   text-decoration: underline;
 }
 
-#four {
-  grid-area: four;
+#four_1 {
+  grid-area: four_1;
 }
 
-#four input {
+#four_1 input {
   padding: 1.5rem 2rem;
   font-size: 1.5rem;
   width: 80%;
@@ -110,7 +110,7 @@ html {
   outline: 0;
 }
 
-#four span {
+#four_1 span {
   padding: 1.5rem 2rem;
   font-size: 1.5rem;
   text-decoration: none;
@@ -120,7 +120,7 @@ html {
   background-color: #f5f5f5;
 }
 
-#four input::placeholder {
+#four_1 input::placeholder {
   color: #002b5c;
 }
 
@@ -147,8 +147,8 @@ html {
   border: 1px solid #002b5c;
 }
 
-#five {
-  grid-area: five;
+#five_1 {
+  grid-area: five_1;
 }
 
 .cartSubtotal {
@@ -182,10 +182,10 @@ progress {
   margin-bottom: 1rem;
 }
 
-#six {
-  grid-area: six;
+#six_1 {
+  grid-area: six_1;
 }
 
-#seven {
+#seven_1 {
   grid-area: seven;
 }

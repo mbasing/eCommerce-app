@@ -1,0 +1,71 @@
+#promo {
+  background-color: white;
+  box-shadow: 2px 2px 3px -1px rgba(82, 77, 82, 0.77);
+  left: 50vw;
+  padding: 4rem 5rem;
+  position: fixed;
+  top: 20vw;
+  transform: translate(-50%, -50%);
+  transition: 800ms ease-in-out;
+  width: 40rem;
+}
+
+#displayPromo {
+  align-items: center;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+}
+
+#displayPromo {
+  position: relative;
+}
+
+#exitPromo {
+  background-color: dodgerblue;
+  border-radius: 50%;
+  color: white;
+  cursor: pointer;
+  font-size: 1.4rem;
+  height: 3rem;
+  padding-top: 0.8rem;
+  position: absolute;
+  right: 0px;
+  text-align: center;
+  top: 0;
+  width: 3rem;
+}
+#exitPromo:hover {
+  color: tomato;
+}
+
+#displayPromo img {
+  width: 18rem;
+}
+
+#displayPromo p {
+  color: #444;
+  font-size: 1.4rem;
+  margin-top: 1.5rem;
+  text-align: center;
+}
+.emailAddress {
+  margin-top: 2rem;
+  margin-bottom: 1.5rem;
+}
+
+.emailAddress input {
+  padding: 1rem 5rem;
+  outline: 0;
+}
+
+.subscribe input {
+  background-color: dodgerblue;
+  border-radius: 0.3rem;
+  border: 0;
+  color: white;
+  cursor: pointer;
+  font-size: 1.4rem;
+  outline: 0;
+  padding: 1.5rem 2rem;
+}

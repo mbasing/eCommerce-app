@@ -8,6 +8,8 @@
     <link rel="preconnect" href="https://fonts.gstatic.com">
     <link href="https://fonts.googleapis.com/css2?family=Nunito+Sans:wght@700&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="../css/style.css">
+    <link rel="stylesheet" href="../css/cart.css">
+    <link rel="stylesheet" href="../css/promo.css">
     <title>Apologia Commerce</title>
 </head>
 <body>
@@ -27,7 +29,7 @@
                   </a>
                   <span>
                       <input type="text" placeholder="Email Address">
-                      <button>JOIN</button>
+                      <a href="#"><button>JOIN</button></a>
                   </span>
               </ul>
               <a href="#">
@@ -58,7 +60,7 @@
                   <li id = "suitcase">
                     <i class="fas fa-suitcase-rolling" id = "suitcase__icon"></i>
                    <span>
-                    <p id = "bag">Bag</p>
+                    <p id = "bag"></p>
                    </span>
                   </li>
               </ul>
@@ -102,17 +104,17 @@
           </div>
           <div id = "three_2">
             <div id = "three_2_a">
-            <a href="#"><img src="../../assets/image2_small.jpg" alt="second image"></a>
+            <a href="#"><img src="../../assets/image2_small.jpg" alt="second image" id = "second_image"></a>
             </div>
                 <div id = "three_2_b">
-                    <a href="#"><img src="../../assets/image1_small.jpg" alt="first image"></a>
+                    <a href="#"><img src="../../assets/image1_small.jpg" alt="first image" id = "first_image"></a>
                 </div>
             <div id = "three_2_c">
-                <a href="#"><img src="../../assets/image3_small.jpg" alt="third image"></a>
+                <a href="#"><img src="../../assets/image3_small.jpg" alt="third image" id = "third_image"></a>
             </div>
           </div>
           <div id = "three_3">
-              <img src="../../assets/image2_large.jpg" alt="">
+              <img src="../../assets/image2_large.jpg"  alt="">
           </div>
           <div id = "three_4">
             <h1>Boys' Stillwater Sherpa 1/4-Zip</h1>
@@ -138,13 +140,12 @@
             <p>Color: Camel</p>
 
             <a href="#">
-                <!-- <div id = "select_color"></div> -->
                 <input type="color" name="favcolor" id="select_color" value = "">
             </a>
 
             <div class = "size">
                 <ul>
-                    <li>Size:</li>
+                    <li>Size: 3T</li>
                     <a href="#">
                         <li id = "size">Size Chart</li>
                     </a>
@@ -191,13 +192,9 @@
                 <div class = "incrementDecrement">
                     <span>
                         <ul>
-                            <a href="#">
                                 <li id = "decrement">-</li>
-                            </a>
                             <li id = "count">1</li>
-                            <a href="#">
                                 <li id = "increment">+</li>
-                            </a>
                         </ul>
                     </span>
                 </div>
@@ -233,6 +230,81 @@
             
           </div>
       </div>
+
+      <!-- ------------------------------------------------------------------------- -->
+      
+      <div class="container_2">
+        <div id = "one_1">
+            <p>Item added to Cart</p>
+            <a href="#"><i class="far fa-window-close" id = "cls"></i></a>
+        </div>
+        <div id = "two_1">
+            <img src="../../assets/image2_large.jpg" alt="cardigan">
+        </div>
+        <div id = "three_1">
+            <h2>Boys' Stillwater Sherpa 1/4-Zip</h2>
+            <div class = "prices">
+                <p id = "newPrice">$48.99</p>
+                <p id = "oldPrice">$98.50</p>
+            </div>
+            
+            <p id = "camel">Camel / 3T</p>
+            <p id = "quantity">Qty: 1</p>
+            <p id = "price">$48.99</p>
+        </div>
+        <div id = "four_1">
+            <div class = "additionItems">
+                <input type="text" placeholder="1 Additional Items in Bag">
+                <a href="#"><span>+</span></a>
+            </div>
+        </div>
+        <div id = "five_1">
+            <div class = "cartSubtotal">
+                <p>CART SUBTOTAL:</p>
+                <p>$48.99</p>
+            </div>
+
+            <div>
+                <progress id="file" value="100" max="100"> 80% </progress>
+                <span>
+                    <p id = "freeShipping">You qualify for FREE SHIPPING</p>
+                </span>
+            </div>
+        </div>
+        <div id = "six_1">
+            <a href="../html/cart.html"><button id = "checkout">CHECKOUT</button></a>
+        </div>
+        <div id = "seven_1">
+            <button id = "continueShopping">CONTINUE SHOPPING</button>
+        </div>
+    </div>
+
+      
+
+      <!-- -------------------------------------------------------------------------- -->
+
+
+      <!-- --------------------------------------------------------------------------- -->
+      
+      <div id="promo">
+        <div id="displayPromo">
+            <div id="exitPromo">
+                X
+            </div>
+            <img src="./../../assets/vineyard.png" alt="vineyard logo">
+            <p>Subscribe to our email newsletter to unlock a 5% discount on your first purchase</p>
+            <div class="emailAddress">
+                <input type="text" placeholder="Email address ...">
+            </div>
+            <div class="subscribe">
+                <a href="#"><input type="submit" value="Subscribe"></a>
+            </div>
+        </div>
+    </div>
+    
+      <!-- --------------------------------------------------------------------------- -->
+
+      
       <div id = "four">
           <p>© 2021 Vineyard Vines. All rights reserved.</p>
           <ul>
@@ -257,6 +329,10 @@
           </ul>
       </div>
    </div>
+   <script
+  src="https://code.jquery.com/jquery-3.6.0.min.js"
+  integrity="sha256-/xUj+3OJU5yExlq6GSYGSHk7tPXikynS7ogEvDej/m4="
+  crossorigin="anonymous"></script>
     <script src="../js/script.js"></script>
 </body>
 </html>

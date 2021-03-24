@@ -90,7 +90,7 @@ a {
   grid-area: cc;
 }
 
-.cc button {
+.cc input {
   background-color: #d43b55;
   color: white;
   padding: 1.5rem 5rem;
