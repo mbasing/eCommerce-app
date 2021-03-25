@@ -249,23 +249,17 @@
             </div>
             
             <p id = "camel">Camel / 3T</p>
-            <p id = "quantity">Qty: 1</p>
-            <p id = "price">$48.99</p>
-        </div>
-        <div id = "four_1">
-            <div class = "additionItems">
-                <input type="text" placeholder="1 Additional Items in Bag">
-                <a href="#"><span>+</span></a>
-            </div>
+            <p id = "quantity">Qty: <span id="quantityCount"></span></p>
+            <!-- <p id = "price">$48.99</p> -->
         </div>
         <div id = "five_1">
             <div class = "cartSubtotal">
                 <p>CART SUBTOTAL:</p>
-                <p>$48.99</p>
+                <p id="cartSubtotal"></p>
             </div>
 
             <div>
-                <progress id="file" value="100" max="100"> 80% </progress>
+                <progress id="file" value="100" max="100">  </progress>
                 <span>
                     <p id = "freeShipping">You qualify for FREE SHIPPING</p>
                 </span>
@@ -297,7 +291,7 @@
                 <input type="text" placeholder="Email address ...">
             </div>
             <div class="subscribe">
-                <a href="#"><input type="submit" value="Subscribe"></a>
+                <a href="#"><input type="submit" value="Subscribe" id="subscribe"></a>
             </div>
         </div>
     </div>

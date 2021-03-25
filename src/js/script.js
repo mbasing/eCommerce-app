@@ -11,16 +11,25 @@ $('#exitPromo').on('click', ()=>{
     $('#promo').fadeOut('fast');
 })
 
-// ------------------increase and decrease items------------------------------
+
+$('#subscribe').on('click', ()=>{
+    alert('You have successfully subscribed. Check your email for a promo code')
+    $('#promo').fadeOut('fast');
+})
 
 let count = document.getElementById('count');
+
+let cartSubTotal =  null;
 
 let increment = document.getElementById("increment");
 increment.addEventListener("click", () => {
     if (count.innerHTML <= 9) {
     count.innerHTML = parseInt(count.innerHTML) + 1;
     $('#bag').text($('#count').text());
-    }
+    $('#quantityCount').text($('#count').text());
+    $('#cartSubtotal').text(Math.round(mult(count,48.99)));
+    $('#cartTotal').text(Math.round(mult(count,48.99)));
+}
 });
 
 let decrement = document.getElementById("decrement");
@@ -28,11 +37,21 @@ decrement.addEventListener("click", () => {
     if (count.innerHTML > 1) {
         count.innerHTML = parseInt(count.innerHTML) - 1;
         $('#bag').text($('#count').text());
+        $('#quantityCount').text($('#count').text());
+        $('#cartSubtotal').Number(text($('#count').text())*10);
+        $('#cartSubtotal').text(Math.round(mult(count,48.99)));
+        $('#cartTotal').text(Math.round(mult(count,48.99)));
+
     } else {
         count.innerHTML = 1;
     }
 });
 
+let mult = (a,b)=>{
+    return Number(a.innerText)*parseFloat(b);
+}
+
+console.log(Math.round(mult(count,48.99)));
 
 
 
@@ -42,42 +61,3 @@ decrement.addEventListener("click", () => {
 
 
 
-// ----------------------------------
-
-// $('#pic1').on('click', () => {
-//     $('#img1').css('visibility', 'visible');
-//     $('#img2').css('visibility', 'hidden');
-//     $('#img3').css('visibility', 'hidden');
-// })
-
-// $('#pic2').on('click', () => {
-//     $('#img2').css('visibility', 'visible');
-//     $('#img1').css('visibility', 'hidden');
-//     $('#img3').css('visibility', 'hidden');
-// })
-
-// $('#pic3').on('click', () => {
-//     $('#img3').css('visibility', 'visible');
-//     $('#img1').css('visibility', 'hidden');
-//     $('#img2').css('visibility', 'hidden');
-// })
-
-// --------------------------------------- 
-
-// $('#first_image').on('click', () => {
-//     $('#img1').css('visibility', 'visible');
-//     $('#img2').css('visibility', 'hidden');
-//     $('#img3').css('visibility', 'hidden');
-// })
-
-// $('#second_image').on('click', () => {
-//     $('#img2').css('visibility', 'visible');
-//     $('#img1').css('visibility', 'hidden');
-//     $('#img3').css('visibility', 'hidden');
-// })
-
-// $('#third_image').on('click', () => {
-//     $('#img3').css('visibility', 'visible');
-//     $('#img1').css('visibility', 'hidden');
-//     $('#img2').css('visibility', 'hidden');
-// })
